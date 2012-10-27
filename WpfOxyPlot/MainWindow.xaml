@@ -1,0 +1,15 @@
+﻿<Window x:Class="WpfOxyPlot.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:oxy="clr-namespace:OxyPlot.Wpf;assembly=OxyPlot.Wpf" xmlns:OxyPlot="clr-namespace:OxyPlot;assembly=OxyPlot"
+        Title="MainWindow" Height="350" Width="525">
+    <oxy:Plot Title="ArrowAnnotation">
+        <oxy:Plot.Axes>
+            <oxy:LinearAxis Position="Bottom" Minimum="0" Maximum="100" />
+            <oxy:LinearAxis Position="Left" Minimum="0" Maximum="100" />
+        </oxy:Plot.Axes>
+        <oxy:Plot.Annotations>
+            <oxy:ArrowAnnotation Color="Green" Text="Arrow 1" StartPoint="10,10" EndPoint="60,30"/>
+        </oxy:Plot.Annotations>
+    </oxy:Plot>
+</Window>
