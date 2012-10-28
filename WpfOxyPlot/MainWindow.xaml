@@ -3,13 +3,13 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:oxy="clr-namespace:OxyPlot.Wpf;assembly=OxyPlot.Wpf" xmlns:OxyPlot="clr-namespace:OxyPlot;assembly=OxyPlot"
         Title="MainWindow" Height="350" Width="525">
-    <oxy:Plot Title="ArrowAnnotation">
+    <oxy:Plot Title="Test" Width="400" Height="300" HorizontalAlignment="Right" VerticalAlignment="Center">
         <oxy:Plot.Axes>
-            <oxy:LinearAxis Position="Bottom" Minimum="0" Maximum="100" />
-            <oxy:LinearAxis Position="Left" Minimum="0" Maximum="100" />
+            <oxy:LinearAxis Title="x" Position="Bottom" Minimum="0" Maximum="100" />
+            <oxy:LinearAxis Title="y" Position="Left" Minimum="0" Maximum="100" FontSize="16" TicklineColor="#FF190000" TickStyle="Crossing" />
         </oxy:Plot.Axes>
         <oxy:Plot.Annotations>
-            <oxy:ArrowAnnotation Color="Green" Text="Arrow 1" StartPoint="10,10" EndPoint="60,30"/>
+            <oxy:ArrowAnnotation Color="Red" Text="Arrow 1" StartPoint="10,10" EndPoint="60,30"/>
         </oxy:Plot.Annotations>
     </oxy:Plot>
 </Window>
